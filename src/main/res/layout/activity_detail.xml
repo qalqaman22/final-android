@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailActivity">
+
+    <TextView
+        android:id="@+id/detail_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/detail_mobilePhone"/>
+
+    <TextView
+        android:id="@+id/detail_mobilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toBottomOf="@id/detail_contact_name"
+        app:layout_constraintBottom_toTopOf="@id/detail_homePhone"/>
+
+    <TextView
+        android:id="@+id/detail_homePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toBottomOf="@id/detail_mobilePhone"
+        app:layout_constraintBottom_toTopOf="@id/detail_workPhone"/>
+
+    <TextView
+        android:id="@+id/detail_workPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toBottomOf="@id/detail_homePhone"
+        app:layout_constraintBottom_toTopOf="@id/detail_group_name"/>
+
+    <TextView
+        android:id="@+id/detail_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toBottomOf="@id/detail_workPhone"
+        app:layout_constraintBottom_toTopOf="@id/detail_group_priority"/>
+
+    <TextView
+        android:id="@+id/detail_group_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+
+        app:layout_constraintTop_toBottomOf="@id/detail_group_name"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
